@@ -9,6 +9,7 @@ import VendorWizard from './components/VendorWizard';
 import { getUrlParams } from './utils/urlParams';
 import { LanguageProvider, useLanguage } from './contexts/LanguageContext';
 import { ToastProvider } from './components/Toast';
+import espressifLogo from '/espressif-logo.svg';
 
 const { Header, Content, Footer } = Layout;
 
@@ -34,11 +35,7 @@ function AppContent() {
     <Layout className="app-layout">
       <Header className="app-header">
         <div className="header-left">
-          <img
-            src={`${import.meta.env.BASE_URL}espressif-logo.svg`}
-            alt="Espressif"
-            className="header-logo"
-          />
+          <img src={espressifLogo} alt="Espressif" className="header-logo" />
         </div>
 
         <Space size="medium" className="header-right">
