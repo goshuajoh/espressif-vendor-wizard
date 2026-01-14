@@ -35,7 +35,7 @@ function AppContent() {
       <Header className="app-header">
         <div className="header-left">
           <img
-            src="/espressif-logo.svg"
+            src={`${import.meta.env.BASE_URL}espressif-logo.svg`}
             alt="Espressif"
             className="header-logo"
           />
